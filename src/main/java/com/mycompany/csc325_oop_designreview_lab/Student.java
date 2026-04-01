@@ -9,14 +9,15 @@ package com.mycompany.csc325_oop_designreview_lab;
  * @author MoaathAlrajab
  */
 public class Student extends Human {
-    //stores gpa and address
+    //stores gpa, address, and credits
     private double gpa;
     private String address;
+    private int credits;
 
     //initializes name, age, and GPA
-    public Student(String name, short age, double gpa) {
+    public Student(String name, short age, int credits) {
         super(name, age);
-        this.gpa = gpa;
+        this.credits = credits;
     }
 
     //returns address
@@ -39,5 +40,21 @@ public class Student extends Human {
     //sets GPA
     public void setGpa(double gpa) {
         this.gpa = gpa;
+    }
+
+    //returns credits
+    public double getCredits(int credits) {
+        return credits;
+    }
+
+    //set credits
+    public void setCredits(int credits) {
+        this.credits = credits;
+    }
+
+    //return student info
+    @Override
+    public String toString() {
+        return "Student name: " + getName() + ", age: " + getAge() + ",credits: " + credits + ", GPA: " + getGpa();
     }
 }
