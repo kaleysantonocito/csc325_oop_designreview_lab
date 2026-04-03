@@ -43,7 +43,7 @@ public class Student extends Human {
     }
 
     //returns credits
-    public double getCredits(int credits) {
+    public int getCredits() {
         return credits;
     }
 
