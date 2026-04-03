@@ -55,6 +55,6 @@ public class Student extends Human {
     //return student info
     @Override
     public String toString() {
-        return "Student name: " + getName() + ", age: " + getAge() + ",credits: " + credits + ", GPA: " + getGpa();
+        return "Student name: " + getName() + ", age: " + getAge() + ", credits: " + credits + ", GPA: " + getGpa();
     }
 }
